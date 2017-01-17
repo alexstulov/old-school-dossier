@@ -1,0 +1,306 @@
+.page-container
+	background-color: #797979
+
+.page
+	color: #2f1b15
+	font-family: "Courier New", monospace
+	font-size: 14px
+	width: 1000px
+	margin: 0 auto
+	padding: 50px 0 78px 0
+	background: url('/assets/images/bg.jpg') repeat
+	/*background-size: cover*/
+
+.b-header
+	width: 898px
+	margin: 0 auto
+
+	.b-header__logo
+		margin: 16px 0 0 -18px
+
+		.b-header__logo-image
+			width: 146px
+			height: 37px
+
+		.b-header__tip
+			display: block
+			margin: 7px 0 0 4px
+			font-family: "PTSans"
+			font-weight: bold
+			font-size: 8.7px
+
+	.b-header__top-secret
+		.b-header__image
+			margin: -2px 0 0 48px
+			width: 252px
+			height: 106px
+
+line-name-style(ml=0, mt=0)
+	font-size: 20px
+	font-family: "PTSans"
+	font-weight: bold
+	margin-left: ml
+	margin-top: mt
+content-style(mt=0, pl=0)
+	font-size: 27px
+	line-height: 20px
+	letter-spacing: 1.7px
+	color: #000000
+	margin-top: mt
+	padding-left: pl
+
+.b-content
+	width: 769px
+	margin: 0 auto
+	/*padding-top: 37px*/
+
+	.b-heading
+		margin: 32px 0 55px -23px
+
+	.b-personal-info
+		margin-bottom: 15px
+
+		.b-personal-info__content
+			content-style()
+		.b-personal-info__content_full-name
+			content-style(6px, 25px)
+		.b-personal-info__content_birth-year
+			content-style(8px, 34px)
+			text-decoration: line-through
+		.b-personal-info__content_life-place
+			content-style(11px, 10px)
+			text-decoration: line-through
+		.b-personal-info__content_skype
+			content-style(13px, 18px)
+		.b-personal-info__content_email
+			content-style(12px, 18px)
+
+		.b-personal-info__line-name
+			line-name-style()
+		.b-personal-info__line-name_full-name
+			line-name-style(-21px, -6px)
+		.b-personal-info__line-name_birth-date
+			line-name-style(-22.9px, -7.5px)
+		.b-personal-info__line-name_life-place
+			line-name-style(-21px, -6.5px)
+		.b-personal-info__line-name_skype
+			line-name-style(-22px, -9px)
+		.b-personal-info__line-name_email
+			line-name-style(-22px, -6px)
+
+
+underline-position(mt=0,ml=0,w=100%)
+	margin-top: mt
+	margin-left: ml
+	width: w
+.b-underline
+	background: url('/assets/images/line.png')
+	background-size: cover
+	height: 7px
+.b-underline_full-name
+	underline-position(12px, -48px, 115%)
+.b-underline_birth-year
+	underline-position(10px, -39px, 113.3%)
+.b-underline_life-place
+	underline-position(9px, -60px, 119.5%)
+.b-underline_skype
+	underline-position(8px, 10px, 103.5%)
+.b-underline_email
+	underline-position(7px, 10px, 103.5%)
+.b-underline_date
+	underline-position(2px, -20px, 128%)
+
+custom-element(w=35px, h=35px, p=0)
+	position: absolute
+	width: w
+	height: h
+	overflow: hidden
+	padding: p
+	border: 0
+	outline: 0
+	opacity: 0
+
+custom-element-plus-label(pn=relative, p=0 0 0 45px, m=0)
+	position: pn
+	padding: p
+	margin: m
+	display: block
+	cursor: pointer
+
+custom-element-plus-before-label(w=35px, h=35px, l=0, t=-10px, b='/assets/images/ellipse.png')
+	display: block
+	margin: 0
+	padding: 0
+	width: w
+	height: h
+	content: " "
+	vertical-align: middle
+	position: absolute
+	left: l
+	top: t
+	background: url(b) center no-repeat
+
+.b-is-html-academy
+	position: relative
+	padding-top: 36px
+	font-size: 20px
+	font-family: "PTSans"
+	font-weight: bold
+	.b-is-html-academy__line
+		padding-left: 0
+		margin-left: -7px
+		margin-top: -1.5px
+	.b-is-html-academy__link
+		font-size: 19px
+		font-family: "PTSans"
+		/*font-weight: bold*/
+		text-decoration: none
+		border-bottom: 2px solid #4a6b97
+	.b-is-html-academy__link:hover
+		text-decoration: none
+		border: none
+	.b-custom-radiobutton-label
+		font-size: 22px
+	.b-custom-radiobutton
+		custom-element()
+	.b-custom-radiobutton_yes + label
+		custom-element-plus-label(relative, 0, -1px 0 0 -2px)
+	.b-custom-radiobutton_yes + label:before
+		custom-element-plus-before-label(35px, 35px, -37px, -6px, '/assets/images/ellipse.png')
+	.b-custom-radiobutton_yes:checked + label:before
+		custom-element-plus-before-label(35px, 35px, -37px, -6px, '/assets/images/dot_ellipse.png')
+
+	.b-custom-radiobutton_no + label
+		custom-element-plus-label(relative, 0, -1px 0 0 14.5px)
+	.b-custom-radiobutton_no + label:before
+		custom-element-plus-before-label(35px, 35px, -36px, -6px, '/assets/images/ellipse.png')
+	.b-custom-radiobutton_no:checked + label:before
+		custom-element-plus-before-label(35px, 35px, -36px, -6px, '/assets/images/dot_ellipse.png')
+
+.b-skills
+	position: relative
+	margin-top: 52px
+	.b-skills__description
+		padding: 0
+		.b-skills__heading
+			font-size: 19.5px
+			font-family: "PTSans"
+			font-weight: bold
+			padding: 0
+			margin: -4px 0 23px -7px
+		.b-skills__text
+			list-style-image: url('/assets/images/listy-style-icon.png')
+			margin: -9px 0 0 10px
+			font-size: 12px
+			line-height: 22px
+			font-family: "PTSans"
+			color: #3d3d3d
+	.b-skills__list
+		margin-top: 121px
+		.b-skills__left-col
+			padding-left: 0
+			margin-left: -5px
+		.b-skills__last-col
+			padding-left: 0
+			margin: -8px 0 0 -7px
+		.b-skills__center-col
+			padding-left: 0
+			margin-left: 2px
+		.b-skills__right-col
+			padding: 0 0 0 23px
+			/*margin-left: 5px*/
+		.b-skills__list-row
+			margin-top: 16px
+			padding-left: 0
+			.b-custom-checkbox
+				width: 20px
+				height: 20px
+		.b-custom-checkbox
+			custom-element(24px, 28px, 0)
+		.b-custom-checkbox + label
+			custom-element-plus-label(relative, 0 0 0 27px, -6px 0 0 0)
+			font-size: 18.5px
+			line-height: 25px
+			font-family: "PTSans"
+			font-weight: bold
+		.b-custom-checkbox + label:before
+			custom-element-plus-before-label(24px, 28px, 0, -4px, '/assets/images/checkbox.png')
+		.b-custom-checkbox:checked + label:before
+			custom-element-plus-before-label(24px, 28px, 0, -4px, '/assets/images/checked.png')
+
+
+.b-javascript-level
+	margin-top: 85px
+	.b-javascript-level__heading
+		font-size: 19.5px
+		font-family: "PTSans"
+		font-weight: bold
+		margin: -3px 0 43px -11px
+	.b-javascript-level__line
+		background: url('/assets/images/slider_line.png') repeat-x
+		height: 7px
+		margin-left: 7px
+		width: 99%
+	.b-javascript-level__scale
+		font-size: 11.5px
+		font-family: "PTSans"
+		font-weight: bold
+	.b-javascript-level__no-skill,
+	.b-javascript-level__best-skill
+		margin-top: -8px
+		padding: 0
+	.b-javascript-level__low-skill,
+	.b-javascript-level__better-skill
+		margin-top: -15px
+		padding: 0
+	.b-javascript-level__no-skill
+		margin-left: 5.5px
+	.b-javascript-level__low-skill
+		margin-left: 19px
+	.b-javascript-level__better-skill
+		margin-left: 33px
+	.b-javascript-level__best-skill
+		margin-left: 0
+		padding: 0
+	.b-javascript-radio_right
+		float: right
+		background-color: red
+	.b-javascript-radio
+		custom-element(20px, 55px)
+	.b-javascript-radio + label
+		custom-element-plus-label(relative, 31px 0 0 0)
+		line-height: 20px
+	.b-javascript-radio + label:before
+		custom-element-plus-before-label(16px, 45px, -5px, -16px, '/assets/images/js-level-big.png')
+	.b-javascript-radio:checked + label:before
+		custom-element-plus-before-label(16px, 45px, -5px, -16px, '/assets/images/js-level-big-checked.png')
+
+	.b-javascript-radio.js-level-small + label
+		custom-element-plus-label(relative, 40px 0 0 0, -4.7px 0 0 -2px)
+	.b-javascript-radio.js-level-small + label:before
+		custom-element-plus-before-label(16px, 35px, -3px, -8px, '/assets/images/js-level-small.png')
+	.b-javascript-radio.js-level-small:checked + label:before
+		custom-element-plus-before-label(16px, 35px, -3px, -8px, '/assets/images/js-level-small-checked.png')
+
+	.b-javascript-radio.b-javascript-radio_right + label
+		custom-element-plus-label(relative, 35px 0 0 54px)
+	.b-javascript-radio.b-javascript-radio_right + label:before
+		custom-element-plus-before-label(16px, 45px, 94%, -19px, '/assets/images/js-level-big.png')
+	.b-javascript-radio.b-javascript-radio_right:checked + label:before
+		custom-element-plus-before-label(16px, 45px, 94%, -19px, '/assets/images/js-level-big-checked.png')
+
+
+.b-footer
+	width: 770px
+	margin: 0 auto
+	padding-top: 50px
+.b-date
+	.b-date__value
+		font-size: 30px
+		padding: 0
+	.b-date__name
+		font-size: 21px
+		font-family: "PTSans"
+		font-weight: bold
+		margin: -13px 0 0 -6.5px
+		padding: 0
