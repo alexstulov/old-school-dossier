@@ -1,6 +1,7 @@
 # CSSSR Project Template
 ** Шаблон проекта для быстрого старта **
-*** Поднял свою версию тестового задания на верстальщика от CSSSR: http://csssr.ru/jobs/pixel-perfectionist *** 
+*** Поднял свою версию тестового задания на верстальщика от CSSSR: http://csssr.astulov.ru 
+Само задание можно посмотреть по ссылке: http://csssr.ru/jobs/pixel-perfectionist *** 
 
 ## Старт проекта
 
