@@ -90,7 +90,7 @@
     "gulp-static-hash": "^0.1.4",
     "gulp-stylint": "^3.0.0",
     "gulp-stylus": "^2.1.0",
-    "gulp-svg-symbols": "^1.0.0",
+    "gulp-svg-symbols": "^3.2.3",
     "gulp-watch": "^4.3.5",
     "gulp-zip": "^3.0.0",
     "gulp.spritesmith-multi": "^2.2.0",
